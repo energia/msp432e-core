@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="ti.drivers" version="1, 0, 0" producerId="undefined">
+    <units>
+        <module name="Config"/>
+        <module name="Power"/>
+    </units>
+    <sources>
+        <srcFile name="package/package_ti.drivers.c"/>
+        <srcFile name="NVS.c"/>
+        <srcFile name="./nvs/NVSRAM.c"/>
+        <srcFile name="./nvs/NVSSPI25X.c"/>
+        <srcFile name="SD.c"/>
+        <srcFile name="./sd/SDSPI.c"/>
+        <srcFile name="SDFatFS.c"/>
+        <srcFile name="./utils/List.c"/>
+        <srcFile name="./utils/RingBuf.c"/>
+        <srcFile name="ADC.c"/>
+        <srcFile name="ADCBuf.c"/>
+        <srcFile name="./adc/ADCMSP432E4.c"/>
+        <srcFile name="./adcbuf/ADCBufMSP432E4.c"/>
+        <srcFile name="./dma/UDMAMSP432E4.c"/>
+        <srcFile name="./emac/EMACMSP432E4.c"/>
+        <srcFile name="./gpio/GPIOMSP432E4.c"/>
+        <srcFile name="I2C.c"/>
+        <srcFile name="./i2c/I2CMSP432E4.c"/>
+        <srcFile name="./nvs/NVSMSP432E4.c"/>
+        <srcFile name="./power/PowerMSP432E4.c"/>
+        <srcFile name="PWM.c"/>
+        <srcFile name="./pwm/PWMMSP432E4.c"/>
+        <srcFile name="SPI.c"/>
+        <srcFile name="./spi/SPIMSP432E4DMA.c"/>
+        <srcFile name="UART.c"/>
+        <srcFile name="./uart/UARTMSP432E4.c"/>
+        <srcFile name="Watchdog.c"/>
+        <srcFile name="./watchdog/WatchdogMSP432E4.c"/>
+    </sources>
+    <configscripts>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/package.cfg.dep" src="package.xdc"/>
+        <srcFile name="lib/drivers_msp432e4.aem4f.mak" src="package.bld"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/package/package_ti.drivers.oem4f.dep" src="package/package_ti.drivers.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/NVS.oem4f.dep" src="NVS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSRAM.oem4f.dep" src="./nvs/NVSRAM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSSPI25X.oem4f.dep" src="./nvs/NVSSPI25X.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SD.oem4f.dep" src="SD.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./sd/SDSPI.oem4f.dep" src="./sd/SDSPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SDFatFS.oem4f.dep" src="SDFatFS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/List.oem4f.dep" src="./utils/List.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/RingBuf.oem4f.dep" src="./utils/RingBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADC.oem4f.dep" src="ADC.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADCBuf.oem4f.dep" src="ADCBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adc/ADCMSP432E4.oem4f.dep" src="./adc/ADCMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adcbuf/ADCBufMSP432E4.oem4f.dep" src="./adcbuf/ADCBufMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./dma/UDMAMSP432E4.oem4f.dep" src="./dma/UDMAMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./emac/EMACMSP432E4.oem4f.dep" src="./emac/EMACMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./gpio/GPIOMSP432E4.oem4f.dep" src="./gpio/GPIOMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/I2C.oem4f.dep" src="I2C.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./i2c/I2CMSP432E4.oem4f.dep" src="./i2c/I2CMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSMSP432E4.oem4f.dep" src="./nvs/NVSMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./power/PowerMSP432E4.oem4f.dep" src="./power/PowerMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/PWM.oem4f.dep" src="PWM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./pwm/PWMMSP432E4.oem4f.dep" src="./pwm/PWMMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SPI.oem4f.dep" src="SPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./spi/SPIMSP432E4DMA.oem4f.dep" src="./spi/SPIMSP432E4DMA.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/UART.oem4f.dep" src="UART.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./uart/UARTMSP432E4.oem4f.dep" src="./uart/UARTMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/Watchdog.oem4f.dep" src="Watchdog.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./watchdog/WatchdogMSP432E4.oem4f.dep" src="./watchdog/WatchdogMSP432E4.c"/>
+        <srcFile name="lib/drivers_msp432e4.am4fg.mak" src="package.bld"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/package/package_ti.drivers.om4fg.dep" src="package/package_ti.drivers.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/NVS.om4fg.dep" src="NVS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSRAM.om4fg.dep" src="./nvs/NVSRAM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSSPI25X.om4fg.dep" src="./nvs/NVSSPI25X.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SD.om4fg.dep" src="SD.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./sd/SDSPI.om4fg.dep" src="./sd/SDSPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SDFatFS.om4fg.dep" src="SDFatFS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/List.om4fg.dep" src="./utils/List.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/RingBuf.om4fg.dep" src="./utils/RingBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADC.om4fg.dep" src="ADC.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADCBuf.om4fg.dep" src="ADCBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adc/ADCMSP432E4.om4fg.dep" src="./adc/ADCMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adcbuf/ADCBufMSP432E4.om4fg.dep" src="./adcbuf/ADCBufMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./dma/UDMAMSP432E4.om4fg.dep" src="./dma/UDMAMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./emac/EMACMSP432E4.om4fg.dep" src="./emac/EMACMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./gpio/GPIOMSP432E4.om4fg.dep" src="./gpio/GPIOMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/I2C.om4fg.dep" src="I2C.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./i2c/I2CMSP432E4.om4fg.dep" src="./i2c/I2CMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSMSP432E4.om4fg.dep" src="./nvs/NVSMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./power/PowerMSP432E4.om4fg.dep" src="./power/PowerMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/PWM.om4fg.dep" src="PWM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./pwm/PWMMSP432E4.om4fg.dep" src="./pwm/PWMMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SPI.om4fg.dep" src="SPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./spi/SPIMSP432E4DMA.om4fg.dep" src="./spi/SPIMSP432E4DMA.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/UART.om4fg.dep" src="UART.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./uart/UARTMSP432E4.om4fg.dep" src="./uart/UARTMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/Watchdog.om4fg.dep" src="Watchdog.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./watchdog/WatchdogMSP432E4.om4fg.dep" src="./watchdog/WatchdogMSP432E4.c"/>
+        <srcFile name="lib/drivers_msp432e4.arm4f.mak" src="package.bld"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/package/package_ti.drivers.orm4f.dep" src="package/package_ti.drivers.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/NVS.orm4f.dep" src="NVS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSRAM.orm4f.dep" src="./nvs/NVSRAM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSSPI25X.orm4f.dep" src="./nvs/NVSSPI25X.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SD.orm4f.dep" src="SD.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./sd/SDSPI.orm4f.dep" src="./sd/SDSPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SDFatFS.orm4f.dep" src="SDFatFS.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/List.orm4f.dep" src="./utils/List.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./utils/RingBuf.orm4f.dep" src="./utils/RingBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADC.orm4f.dep" src="ADC.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/ADCBuf.orm4f.dep" src="ADCBuf.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adc/ADCMSP432E4.orm4f.dep" src="./adc/ADCMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./adcbuf/ADCBufMSP432E4.orm4f.dep" src="./adcbuf/ADCBufMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./dma/UDMAMSP432E4.orm4f.dep" src="./dma/UDMAMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./emac/EMACMSP432E4.orm4f.dep" src="./emac/EMACMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./gpio/GPIOMSP432E4.orm4f.dep" src="./gpio/GPIOMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/I2C.orm4f.dep" src="I2C.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./i2c/I2CMSP432E4.orm4f.dep" src="./i2c/I2CMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./nvs/NVSMSP432E4.orm4f.dep" src="./nvs/NVSMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./power/PowerMSP432E4.orm4f.dep" src="./power/PowerMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/PWM.orm4f.dep" src="PWM.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./pwm/PWMMSP432E4.orm4f.dep" src="./pwm/PWMMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/SPI.orm4f.dep" src="SPI.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./spi/SPIMSP432E4DMA.orm4f.dep" src="./spi/SPIMSP432E4DMA.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/UART.orm4f.dep" src="UART.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./uart/UARTMSP432E4.orm4f.dep" src="./uart/UARTMSP432E4.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/Watchdog.orm4f.dep" src="Watchdog.c"/>
+        <srcFile name="package/lib/lib/drivers_msp432e4/./watchdog/WatchdogMSP432E4.orm4f.dep" src="./watchdog/WatchdogMSP432E4.c"/>
+        <srcFile name="package/rel/ti_drivers.tar.dep" src="package/rel/ti_drivers.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.arm.elf.M4F"
+            version="ti.targets.arm.elf.M4F{1,0,18.1,1"
+            rawVersion="18.1.1"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M4"
+            suffix="em4f"
+            rootDir="/db/vendors/ti/arm/18.1.1.LTS/Linux"
+            os="undefined"
+            rts="ti.targets.arm.rtsarm">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+        <target name="gnu.targets.arm.M4F"
+            version="gnu.targets.arm.M4F{1,0,7.2,1"
+            rawVersion="7.2.1"
+            platform="ti.platforms.tiva:TM4C1294NCPDT"
+            isa="v7M4"
+            suffix="m4fg"
+            rootDir="/db/vendors/linaro/gcc-arm-none-eabi-7-2017-q4-major"
+            os="undefined"
+            rts="gnu.targets.arm.rtsv7M">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+        <target name="iar.targets.arm.M4F"
+            version="iar.targets.arm.M4F{1,0,8.20,2"
+            rawVersion="8.20.2.58"
+            platform="ti.platforms.tiva:TM4C1294NCPDT:1"
+            isa="v7M4"
+            suffix="rm4f"
+            rootDir="/db/vendors/iar/arm/8.20.2.58/Linux"
+            os="undefined"
+            rts="iar.targets.arm.rts">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    <library name="lib/drivers_msp432e4"
+        pname="lib/drivers_msp432e4.aem4f"
+        profile="release"
+        target="ti.targets.arm.elf.M4F"/>
+    <library name="lib/drivers_msp432e4"
+        pname="lib/drivers_msp432e4.am4fg"
+        profile="release"
+        target="gnu.targets.arm.M4F"/>
+    <library name="lib/drivers_msp432e4"
+        pname="lib/drivers_msp432e4.arm4f"
+        profile="release"
+        target="iar.targets.arm.M4F"/>
+    </libraries>
+    <configurations>
+    </configurations>
+    <executables>
+    </executables>
+    <tests>
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="ti_drivers"
+        pname="ti_drivers.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+        <file name="Config.xml"/>
+        <file name="libBuilder.xs"/>
+        <file name="package.bld"/>
+        <file name="xdcArgParser.xs"/>
+        <file name="NVS.h"/>
+        <file name="./nvs/NVSRAM.h"/>
+        <file name="./nvs/NVSSPI25X.h"/>
+        <file name="SD.h"/>
+        <file name="./sd/SDSPI.h"/>
+        <file name="SDFatFS.h"/>
+        <file name="./dpl/ClockP.h"/>
+        <file name="./dpl/DebugP.h"/>
+        <file name="./dpl/HwiP.h"/>
+        <file name="./dpl/MutexP.h"/>
+        <file name="./dpl/SemaphoreP.h"/>
+        <file name="./dpl/SwiP.h"/>
+        <file name="./dpl/SystemP.h"/>
+        <file name="./utils/List.h"/>
+        <file name="./utils/RingBuf.h"/>
+        <file name="ADC.h"/>
+        <file name="ADCBuf.h"/>
+        <file name="./adc/ADCMSP432E4.h"/>
+        <file name="./adcbuf/ADCBufMSP432E4.h"/>
+        <file name="./dma/UDMAMSP432E4.h"/>
+        <file name="./emac/EMACMSP432E4.h"/>
+        <file name="GPIO.h"/>
+        <file name="./gpio/GPIOMSP432E4.h"/>
+        <file name="I2C.h"/>
+        <file name="./i2c/I2CMSP432E4.h"/>
+        <file name="./nvs/NVSMSP432E4.h"/>
+        <file name="Power.h"/>
+        <file name="./power/PowerMSP432E4.h"/>
+        <file name="PWM.h"/>
+        <file name="./pwm/PWMMSP432E4.h"/>
+        <file name="SPI.h"/>
+        <file name="./spi/SPIMSP432E4DMA.h"/>
+        <file name="UART.h"/>
+        <file name="./uart/UARTMSP432E4.h"/>
+        <file name="Watchdog.h"/>
+        <file name="./watchdog/WatchdogMSP432E4.h"/>
+        <file name="package/package.cfg.xdc.inc"/>
+        <file name="lib/drivers_msp432e4.aem4f"/>
+        <file name="package/package_ti.drivers.c"/>
+        <file name="NVS.c"/>
+        <file name="./nvs/NVSRAM.c"/>
+        <file name="./nvs/NVSSPI25X.c"/>
+        <file name="SD.c"/>
+        <file name="./sd/SDSPI.c"/>
+        <file name="SDFatFS.c"/>
+        <file name="./utils/List.c"/>
+        <file name="./utils/RingBuf.c"/>
+        <file name="ADC.c"/>
+        <file name="ADCBuf.c"/>
+        <file name="./adc/ADCMSP432E4.c"/>
+        <file name="./adcbuf/ADCBufMSP432E4.c"/>
+        <file name="./dma/UDMAMSP432E4.c"/>
+        <file name="./emac/EMACMSP432E4.c"/>
+        <file name="./gpio/GPIOMSP432E4.c"/>
+        <file name="I2C.c"/>
+        <file name="./i2c/I2CMSP432E4.c"/>
+        <file name="./nvs/NVSMSP432E4.c"/>
+        <file name="./power/PowerMSP432E4.c"/>
+        <file name="PWM.c"/>
+        <file name="./pwm/PWMMSP432E4.c"/>
+        <file name="SPI.c"/>
+        <file name="./spi/SPIMSP432E4DMA.c"/>
+        <file name="UART.c"/>
+        <file name="./uart/UARTMSP432E4.c"/>
+        <file name="Watchdog.c"/>
+        <file name="./watchdog/WatchdogMSP432E4.c"/>
+        <file name="lib/drivers_msp432e4.am4fg"/>
+        <file name="lib/drivers_msp432e4.arm4f"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

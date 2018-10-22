@@ -1,0 +1,106 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Ethernet	src/Ethernet.cpp	/^EthernetClass Ethernet;$/;"	v
+EthernetClass	src/Ethernet.cpp	/^EthernetClass::EthernetClass()$/;"	f	class:EthernetClass
+EthernetClass	src/Ethernet.h	/^class EthernetClass {$/;"	c
+EthernetClient	src/EthernetClient.cpp	/^EthernetClient::EthernetClient() {$/;"	f	class:EthernetClient
+EthernetClient	src/EthernetClient.cpp	/^EthernetClient::EthernetClient(uint8_t socketIndex) {$/;"	f	class:EthernetClient
+EthernetClient	src/EthernetClient.h	/^class EthernetClient : public Client {$/;"	c
+EthernetServer	src/EthernetServer.cpp	/^EthernetServer::EthernetServer(uint16_t port) {$/;"	f	class:EthernetServer
+EthernetServer	src/EthernetServer.h	/^class EthernetServer : public Server {$/;"	c
+MAXSOCKETS	src/Ethernet.h	/^#define MAXSOCKETS /;"	d
+MAXSOCKETS	src/globals.c	/^#define MAXSOCKETS /;"	d	file:
+MAX_CLIENTS	src/EthernetServer.h	/^#define MAX_CLIENTS /;"	d
+NO_SOCKET_AVAIL	src/Ethernet.h	/^#define NO_SOCKET_AVAIL /;"	d
+PKT_NUM_FRAMEBUF	src/globals.c	/^#define PKT_NUM_FRAMEBUF /;"	d	file:
+PKT_SIZE_FRAMEBUF	src/globals.c	/^#define PKT_SIZE_FRAMEBUF /;"	d	file:
+SO_ERROR	src/EthernetClient.cpp	/^#define SO_ERROR /;"	d	file:
+TCP_RX_BUFF_MAX_SIZE	src/EthernetClient.h	/^#define TCP_RX_BUFF_MAX_SIZE /;"	d
+TYPE_TCP_CLIENT	src/Ethernet.h	/^#define TYPE_TCP_CLIENT /;"	d
+TYPE_TCP_CONNECTED_CLIENT	src/Ethernet.h	/^#define TYPE_TCP_CONNECTED_CLIENT /;"	d
+TYPE_TCP_SERVER	src/Ethernet.h	/^#define TYPE_TCP_SERVER /;"	d
+TYPE_UDP_PORT	src/Ethernet.h	/^#define TYPE_UDP_PORT /;"	d
+_ETHERNETCLIENT_H_	src/EthernetClient.h	/^#define _ETHERNETCLIENT_H_$/;"	d
+_ETHERNET_H_	src/Ethernet.h	/^#define _ETHERNET_H_$/;"	d
+_IPCONFIG	src/ipconfig.h	/^} _IPCONFIG;$/;"	t	typeref:struct:_ip_config
+_IPCONFIG_H_	src/ipconfig.h	/^#define _IPCONFIG_H_$/;"	d
+_handleArray	src/Ethernet.cpp	/^int16_t EthernetClass::_handleArray[MAXSOCKETS];$/;"	m	class:EthernetClass	file:
+_handleArray	src/Ethernet.h	/^    static int16_t _handleArray[MAXSOCKETS];$/;"	m	class:EthernetClass
+_ip_config	src/ipconfig.h	/^typedef struct _ip_config {$/;"	s
+_lastServicedClient	src/EthernetServer.h	/^        int8_t _lastServicedClient;$/;"	m	class:EthernetServer
+_port	src/EthernetServer.h	/^	uint16_t _port;$/;"	m	class:EthernetServer
+_portArray	src/Ethernet.cpp	/^int16_t EthernetClass::_portArray[MAXSOCKETS];$/;"	m	class:EthernetClass	file:
+_portArray	src/Ethernet.h	/^    static int16_t _portArray[MAXSOCKETS];$/;"	m	class:EthernetClass
+_serverPortArray	src/Ethernet.cpp	/^int16_t EthernetClass::_serverPortArray[MAXSOCKETS];$/;"	m	class:EthernetClass	file:
+_serverPortArray	src/Ethernet.h	/^    static int16_t _serverPortArray[MAXSOCKETS];$/;"	m	class:EthernetClass
+_socketHandle	src/EthernetServer.cpp	/^int  EthernetServer::_socketHandle = NO_SOCKET_AVAIL;$/;"	m	class:EthernetServer	file:
+_socketHandle	src/EthernetServer.h	/^        static int  _socketHandle;$/;"	m	class:EthernetServer
+_socketIndex	src/EthernetClient.h	/^    int _socketIndex;$/;"	m	class:EthernetClient
+_typeArray	src/Ethernet.cpp	/^int16_t EthernetClass::_typeArray[MAXSOCKETS];$/;"	m	class:EthernetClass	file:
+_typeArray	src/Ethernet.h	/^    static int16_t _typeArray[MAXSOCKETS];$/;"	m	class:EthernetClass
+acceptor	src/EthernetServer.cpp	/^void EthernetServer::acceptor(uint32_t arg0, uint32_t arg1) {$/;"	f	class:EthernetServer
+address	src/ipconfig.h	/^    uint32_t address;$/;"	m	struct:_ip_config
+available	src/EthernetClient.cpp	/^int EthernetClient::available() {$/;"	f	class:EthernetClient
+available	src/EthernetServer.cpp	/^EthernetClient EthernetServer::available() {$/;"	f	class:EthernetServer
+begin	src/Ethernet.cpp	/^void EthernetClass::begin()$/;"	f	class:EthernetClass
+begin	src/Ethernet.cpp	/^void EthernetClass::begin(IPAddress local_ip)$/;"	f	class:EthernetClass
+begin	src/Ethernet.cpp	/^void EthernetClass::begin(IPAddress local_ip, IPAddress dns_server)$/;"	f	class:EthernetClass
+begin	src/Ethernet.cpp	/^void EthernetClass::begin(IPAddress local_ip, IPAddress dns_server, IPAddress gateway)$/;"	f	class:EthernetClass
+begin	src/Ethernet.cpp	/^void EthernetClass::begin(IPAddress local_ip, IPAddress dns_server, IPAddress gateway, IPAddress subnet)$/;"	f	class:EthernetClass
+begin	src/EthernetServer.cpp	/^void EthernetServer::begin() {$/;"	f	class:EthernetServer
+clients	src/Ethernet.cpp	/^EthernetClient EthernetClass::clients[MAXSOCKETS];$/;"	m	class:EthernetClass	file:
+clients	src/Ethernet.h	/^    static EthernetClient clients[MAXSOCKETS];$/;"	m	class:EthernetClass
+connect	src/EthernetClient.cpp	/^int EthernetClient::connect(IPAddress ip, uint16_t port)$/;"	f	class:EthernetClient
+connect	src/EthernetClient.cpp	/^int EthernetClient::connect(const char *host, uint16_t port) {$/;"	f	class:EthernetClient
+connected	src/EthernetClient.cpp	/^uint8_t EthernetClient::connected()$/;"	f	class:EthernetClient
+dns	src/ipconfig.h	/^    uint32_t dns;$/;"	m	struct:_ip_config
+dnsServer	src/Ethernet.cpp	/^IPAddress EthernetClass::dnsServer()$/;"	f	class:EthernetClass
+ethernetserver_h	src/EthernetServer.h	/^#define ethernetserver_h$/;"	d
+flush	src/EthernetClient.cpp	/^void EthernetClient::flush() {$/;"	f	class:EthernetClient
+gateway	src/ipconfig.h	/^    uint32_t gateway;$/;"	m	struct:_ip_config
+gatewayIP	src/Ethernet.cpp	/^IPAddress EthernetClass::gatewayIP()$/;"	f	class:EthernetClass
+getSocket	src/Ethernet.cpp	/^uint8_t EthernetClass::getSocket()$/;"	f	class:EthernetClass
+hostName	src/globals.c	/^const static char *hostName = "energia";$/;"	v	file:
+initIpDhcp	src/globals.c	/^static void initIpDhcp(void *hCfg)$/;"	f	file:
+initIpStatic	src/globals.c	/^static void initIpStatic(void *hCfg, _IPCONFIG *config)$/;"	f	file:
+initTcp	src/globals.c	/^static void initTcp(void *hCfg)$/;"	f	file:
+initUdp	src/globals.c	/^void initUdp(void *hCfg)$/;"	f
+ipconfig	src/Ethernet.h	/^static _IPCONFIG ipconfig;$/;"	v
+localIP	src/Ethernet.cpp	/^IPAddress EthernetClass::localIP()$/;"	f	class:EthernetClass
+magic	src/EthernetClient.h	/^    uint16_t magic;$/;"	m	class:EthernetClient
+maintain	src/Ethernet.cpp	/^int EthernetClass::maintain() {$/;"	f	class:EthernetClass
+ndkStackThread	src/globals.c	/^void *ndkStackThread(void *threadArgs) {$/;"	f
+netIPAddrHook	src/globals.c	/^void netIPAddrHook(uint32_t IPAddr, unsigned int IfIdx, unsigned int fAdd)$/;"	f
+networkClose	src/globals.c	/^void networkClose()$/;"	f
+networkIPAddr	src/globals.c	/^void networkIPAddr(uint32_t IPAddr, uint32_t IfIdx, uint32_t fAdd)$/;"	f
+networkOpen	src/globals.c	/^void networkOpen()$/;"	f
+nslookup	src/Ethernet.cpp	/^IPAddress EthernetClass::nslookup(const char *host)$/;"	f	class:EthernetClass
+operator bool	src/EthernetClient.cpp	/^EthernetClient::operator bool() {$/;"	f	class:EthernetClient
+peek	src/EthernetClient.cpp	/^int EthernetClient::peek()$/;"	f	class:EthernetClient
+read	src/EthernetClient.cpp	/^int EthernetClient::read() {$/;"	f	class:EthernetClient
+read	src/EthernetClient.cpp	/^int EthernetClient::read(uint8_t *buf, size_t size)$/;"	f	class:EthernetClient
+rx_buffer	src/EthernetClient.h	/^    uint8_t rx_buffer[TCP_RX_BUFF_MAX_SIZE];$/;"	m	class:EthernetClient
+rx_currentIndex	src/EthernetClient.h	/^    int rx_currentIndex;$/;"	m	class:EthernetClient
+rx_fillLevel	src/EthernetClient.h	/^    int rx_fillLevel;$/;"	m	class:EthernetClient
+server_socket	src/EthernetClient.h	/^    bool server_socket;$/;"	m	class:EthernetClient
+serviceReport	src/globals.c	/^static void serviceReport(uint32_t item, uint32_t status, uint32_t report,$/;"	f	file:
+stack_is_up	src/Ethernet.cpp	/^bool stack_is_up = false;$/;"	v
+stop	src/EthernetClient.cpp	/^void EthernetClient::stop() {$/;"	f	class:EthernetClient
+subnet	src/ipconfig.h	/^    uint32_t subnet;$/;"	m	struct:_ip_config
+subnetMask	src/Ethernet.cpp	/^IPAddress EthernetClass::subnetMask()$/;"	f	class:EthernetClass
+ti_ndk_config_Global_numFrameBuf	src/globals.c	/^const int ti_ndk_config_Global_numFrameBuf = PKT_NUM_FRAMEBUF;$/;"	v
+ti_ndk_config_Global_pBufMem	src/globals.c	/^unsigned char ti_ndk_config_Global_pBufMem[PKT_NUM_FRAMEBUF * PKT_SIZE_FRAMEBUF]; __attribute__ ((aligned(128), section(".bss:NDK_PACKETMEM")));$/;"	v
+ti_ndk_config_Global_pHdrMem	src/globals.c	/^unsigned char ti_ndk_config_Global_pHdrMem[PKT_NUM_FRAMEBUF * sizeof(PBM_Pkt)] __attribute__ ((aligned(128), section(".bss:NDK_PACKETMEM")));$/;"	v
+ti_ndk_config_Global_sizeFrameBuf	src/globals.c	/^const int ti_ndk_config_Global_sizeFrameBuf = PKT_SIZE_FRAMEBUF;$/;"	v
+ti_ndk_config_Global_startupFxn	src/globals.c	/^void ti_ndk_config_Global_startupFxn(_IPCONFIG *config) {$/;"	f
+ti_ndk_socket_fdtable	src/globals.c	/^void *ti_ndk_socket_fdtable[MAXSOCKETS];$/;"	v
+ti_ndk_socket_max_fd	src/globals.c	/^uint32_t ti_ndk_socket_max_fd = MAXSOCKETS;$/;"	v
+write	src/EthernetClient.cpp	/^size_t EthernetClient::write(const uint8_t *buf, size_t len) {$/;"	f	class:EthernetClient
+write	src/EthernetClient.cpp	/^size_t EthernetClient::write(uint8_t b) {$/;"	f	class:EthernetClient
+write	src/EthernetServer.cpp	/^size_t EthernetServer::write(const uint8_t *buffer, size_t size) {$/;"	f	class:EthernetServer
+write	src/EthernetServer.cpp	/^size_t EthernetServer::write(uint8_t b) {$/;"	f	class:EthernetServer
+~EthernetClient	src/EthernetClient.cpp	/^EthernetClient::~EthernetClient()$/;"	f	class:EthernetClient

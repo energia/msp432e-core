@@ -1,0 +1,30 @@
+##############################################################
+menu.cpu=Processor
+MSP-EXP432E401Y.vid.0=0x2341
+MSP-EXP432E401Y.pid.0=0x0c9f
+MSP-EXP432E401Y.name=LaunchPad w/ msp432e EMT (120MHz)
+MSP-EXP432E401Y.build.mcu=cortex-m4
+MSP-EXP432E401Y.build.f_cpu=120000000L
+MSP-EXP432E401Y.build.core=msp432e
+MSP-EXP432E401Y.build.variant=MSP_EXP432E401Y
+MSP-EXP432E401Y.build.board=MSP_EXP432E401Y
+MSP-EXP432E401Y.build.ldscript=linker.cmd
+MSP-EXP432E401Y.upload.tool=dslite
+MSP-EXP432E401Y.upload.protocol=dslite
+MSP-EXP432E401Y.upload.maximum_size=1048576
+MSP-EXP432E401Y.upload.maximum_data_size=262144
+##############################################################
+menu.cpu=Processor
+EK-TM4C1294XL.vid.0=0x2341
+EK-TM4C1294XL.pid.0=0x0c9f
+EK-TM4C1294XL.name=LaunchPad w/ tm4c1294 EMT (120MHz)
+EK-TM4C1294XL.build.mcu=cortex-m4
+EK-TM4C1294XL.build.f_cpu=120000000L
+EK-TM4C1294XL.build.core=msp432e
+EK-TM4C1294XL.build.variant=EK_TM4C1294XL
+EK-TM4C1294XL.build.board=EK_TM4C1294XL
+EK-TM4C1294XL.build.ldscript=linker.cmd
+EK-TM4C1294XL.upload.tool=dslite
+EK-TM4C1294XL.upload.protocol=dslite
+EK-TM4C1294XL.upload.maximum_size=1048576
+EK-TM4C1294XL.upload.maximum_data_size=262144

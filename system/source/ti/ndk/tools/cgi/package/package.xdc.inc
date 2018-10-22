@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/ti.ndk.tools.cgi.sch
+package/.vers_g200
+package/.vers_r200
+package/.vers_b200
+package/.xdc-D28
+package/ti_ndk_tools_cgi.java
+package/ti_ndk_tools_cgi.class
+package/package_ti.ndk.tools.cgi.c
+package/package.defs.h
+package/ti.ndk.tools.cgi.ccs

@@ -1,0 +1,15 @@
+package/package.bld.xml
+package/build.cfg
+package/package.xdc.inc
+httpclient.h
+httpclient_internal.h
+package.bld
+package/package.cfg.xdc.inc
+lib/ccs/m4f/httpclient_debug.a
+package/package_ti.net.http.c
+httpclient.c
+lib/ccs/m4f/httpclient_release.a
+lib/gcc/m4f/httpclient_debug.a
+lib/gcc/m4f/httpclient_release.a
+lib/iar/m4f/httpclient_debug.a
+lib/iar/m4f/httpclient_release.a

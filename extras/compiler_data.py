@@ -35,8 +35,8 @@ def init_tools_data(args, my_url):
 		('systems', [
 			{
 				'host': 'i686-mingw32',
-				'url': my_url + "windows/" + args.cname + "-" + args.cversion + '-windows.tar.gz',
-				'archiveFileName': args.cname + "-" + args.cversion + '-windows.tar.gz',
+				'url': my_url + "windows/" + args.cname + "-" + args.cversion + '-windows.tar.bz2',
+				'archiveFileName': args.cname + "-" + args.cversion + '-windows.tar.bz2',
 			},
 			{
 				'host': 'x86_64-apple-darwin',

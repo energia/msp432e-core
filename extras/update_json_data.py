@@ -74,6 +74,8 @@ parser.add_argument('-c', '--cversion', default='1.0.1',
                     help='Required: compiler version')
 parser.add_argument('-d', '--dslite', default='1.0.2',
                     help='Required: dslite version')
+parser.add_argument('-i', '--ino2cpp', default='1.0.4',
+                    help='Required: dslite version')
 parser.add_argument('-e', '--mspdebug', default='0.22',
                     help='Required: mspdebug version')
 parser.add_argument('-u', '--url', default='http',
@@ -125,7 +127,7 @@ with open(args.package_file+".xxx", 'w') as json_file:
     tool = OrderedDict([
         ('packager', "energia"),
         ('name', 'ino2cpp'),
-        ('version', "1.0.4"),
+        ('version', args.ino2cpp),
     ])
     add_toolsDependencies(args.arch, args.version, tool, json_data)
 

@@ -29,20 +29,20 @@ set -e
 source ./extras/versions.sh
 source ./extras/setup.bash
 
- 
-echo '--- do compiler packages'
-echo 'prepare gcc'
+
+echo 'prepare dslite'
 echo "this needs to be already available online at: ${DSLITE_URL}"
-m_download "${DSLITE_URL}/windows/gcc-arm-none-eabi-${GCC_VER}-windows.tar.bz2"
-cp  extras/download/gcc-arm-none-eabi-${GCC_VER}-windows.tar.bz2 extras/build/windows/
-m_download "${DSLITE_URL}/macosx/gcc-arm-none-eabi-${GCC_VER}-mac.tar.bz2"
-cp  extras/download/gcc-arm-none-eabi-${GCC_VER}-mac.tar.bz2 extras/build/macos/
-m_download "${DSLITE_URL}/linux64/gcc-arm-none-eabi-${GCC_VER}-x86_64-pc-linux-gnu.tar.bz2"
-cp  extras/download/gcc-arm-none-eabi-${GCC_VER}-x86_64-pc-linux-gnu.tar.bz2 extras/build/linux64/
-for filename in $(find extras/build/ -name 'gcc-arm-none-eabi-*.sha256' ); do
+m_download "${DSLITE_URL}/windows/dslite-${DSLITE_VER}-i686-mingw32.tar.bz2"
+cp  extras/download/dslite-${DSLITE_VER}-i686-mingw32.tar.bz2 extras/build/windows/
+m_download "${DSLITE_URL}/macosx/dslite-${DSLITE_VER}-x86_64-apple-darwin.tar.bz2"
+cp  extras/download/dslite-${DSLITE_VER}-x86_64-apple-darwin.tar.bz2 extras/build/macos/
+m_download "${DSLITE_URL}/linux64/dslite-${DSLITE_VER}-i386-x86_64-pc-linux-gnu.tar.bz2"
+cp  extras/download/dslite-${DSLITE_VER}-i386-x86_64-pc-linux-gnu.tar.bz2 extras/build/linux64/
+
+for filename in $(find extras/build/ -name 'dslite-*.sha256' ); do
     rm "$filename" 
 done 
-for filename in $(find extras/build/ -name 'gcc-arm-none-eabi-*' ); do
+for filename in $(find extras/build/ -name 'dslite-*' ); do
     shasum -a 256 "$filename" >"$filename".sha256
 done
 

@@ -14,6 +14,7 @@ GCC_VER="6.3.1-20170620"
 DSLITE_URL="https://s3.amazonaws.com/energiaUS/tools"
 DSLITE_VER="8.2.0.1400"
 
+INO2CPP_VER="1.0.4"
 
 # Energia tools version number - stored in platform.txt
 ENERGIA_VER="5.19.0"

@@ -42,7 +42,7 @@ compiler.driverlib.c.flags="-I{build.system.path}/source/ti/devices/msp432e4/dri
 compiler.emt.c.flags="-I{build.system.path}/energia" "-I{build.core.path}/ti/runtime/wiring/" "-I{build.core.path}/ti/runtime/wiring/msp432e" "-I{build.system.path}/source/ti/net/bsd" "-I{build.system.path}/source" "-I{build.system.path}/source/third_party/CMSIS/Include" "-I{build.system.path}/source/ti/posix/gcc" "-I{build.system.path}/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/newlib-nano" "-I{build.system.path}/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include" "-I{build.system.path}/source" "-I{build.system.path}/kernel/tirtos/packages" "-I{build.system.path}/kernel/tirtos/builds/MSP_EXP432E401Y/release/gcc/.." "-I{build.system.path}/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include/newlib-nano" "-I{build.system.path}/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/include" "-I{compiler.path}/arm-none-eabi/include"
 
 # this can be overriden in boards.txt
-build.extra_flags=-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mabi=aapcs -g -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_target_name__=M4F -Dxdc_cfg__xheader__="configPkg/package/cfg/energia_pm4fg.h" -Dxdc__nolocalstring=1 -D__MSP432E401Y__ -DBOARD_{build.board}
+build.extra_flags=-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mabi=aapcs -g -Dxdc_target_types__=gnu/targets/arm/std.h -Dxdc_target_name__=M4F -Dxdc_cfg__xheader__="configPkg/package/cfg/energia_pm4fg.h" -DBOARD_MSP_EXP432E401Y -Dxdc__nolocalstring=1 -D__MSP432E401Y__
 
 linker.include.flags="-L{build.system.path}/kernel/tirtos/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard" "-L{build.path}" "-L{build.core.path}" "-L{build.system.path}/energia" "-L{build.system.path}/kernel" "-L{build.system.path}/source" "-L{build.system.path}/kernel/tirtos/builds/{build.variant}/energia/" "-L{build.system.path}/kernel/tirtos/packages"
 
@@ -85,7 +85,7 @@ recipe.ar.pattern="{compiler.path}{compiler.ar.cmd}" {compiler.ar.flags} {compil
 ## Combine gc-sections, archives, and objects
 recipe.c.combine.pattern="{compiler.path}{compiler.cpp.elf.cmd}" -mcpu={build.mcu} -mthumb -nostartfiles {compiler.c.elf.flags} "-Wl,-u,main" "-Wl,-Map,{build.path}/{build.project_name}.map" {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" {object_files} {linker.include.flags} "-L{build.core.path}/ti/runtime/wiring/msp432e" "-L{build.core.path}/ti/runtime/wiring/msp432e/variants/MSP_EXP432E401Y" -Wl,--check-sections -Wl,--gc-sections "{build.path}/{archive_file}" "-Wl,-T{build.system.path}/energia/{build.ldscript}" "{build.system.path}/source/ti/devices/msp432e4/driverlib/lib/gcc/m4f/msp432e4_driverlib.a" -static -lstdc++ -lgcc -lc -lm -lnosys
 
-recipe.hooks.linking.postlink.1.pattern.windows=cmd /c copy "{build.system.path}/energia/energia_pm4fg.rov.xs" "{build.path}"
+## recipe.hooks.linking.postlink.1.pattern.windows=cmd /c copy "{build.system.path}/energia/energia_pm4fg.rov.xs" "{build.path}"
 recipe.hooks.linking.postlink.1.pattern.linux=bash -c "cp {build.system.path}/energia/energia_pm4fg.rov.xs {build.path}"
 recipe.hooks.linking.postlink.1.pattern.macosx=bash -c "cp {build.system.path}/energia/energia_pm4fg.rov.xs {build.path}"
 
@@ -104,8 +104,10 @@ recipe.size.regex.data=^(?:\.data|\.bss)\s+([0-9]+).*
 # TI's DSLite
 tools.dslite.upload.params.verbose=
 tools.dslite.upload.params.quiet=
-tools.dslite.path={runtime.tools.dslite-7.2.0.2096.path}
+#tools.dslite.path={runtime.tools.dslite-7.2.0.2096.path}
+#tools.dslite.path={runtime.tools.dslite-8.2.0.1400.path}
+tools.dslite.path={runtime.tools.dslite-8.0.0.1202.path}
 tools.dslite.config.path={path}
 tools.dslite.cmd.path={path}/DebugServer/bin/DSLite
-tools.dslite.upload.pattern={cmd.path} {upload.verbose} load -c "{config.path}/EK-TM4C1294XL.ccxml" -f "{build.path}/{build.project_name}.elf"
-
+#tools.dslite.upload.pattern={cmd.path} {upload.verbose} load -c "{config.path}/EK-TM4C1294XL.ccxml" -f "{build.path}/{build.project_name}.elf"
+tools.dslite.upload.pattern={cmd.path} {upload.verbose} load -c "{config.path}/MSP_EXP432E401Y.ccxml" -f "{build.path}/{build.project_name}.elf"
